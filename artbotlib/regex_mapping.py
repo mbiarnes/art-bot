@@ -3,6 +3,7 @@ import re
 
 from artbotlib import brew_list, elliott
 from artbotlib.buildinfo import buildinfo_for_release, alert_on_build_complete
+from artbotlib.mbiarnes_test import hello_world
 from artbotlib.pr_status import pr_status
 from artbotlib.taskinfo import alert_on_task_complete
 from artbotlib.constants import PROW_BASE_URL
@@ -125,6 +126,11 @@ def map_command_to_regex(so, plain_text, user_id):
             "flag": re.I,
             "function": show_help,
             "example": "help"
+        },
+        {
+            "regex": r"^HelloWorld",
+            "flag": re.I,
+            "function": hello_world
         },
 
         # ART releases:

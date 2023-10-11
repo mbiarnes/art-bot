@@ -13,6 +13,7 @@ _*ART config:*_
 * What images build in `major.minor`?
 * What is the image pipeline for (github|distgit|package|cdn|image) `name` [in `major.minor`]?
 * What is the (brew-image|brew-component) for dist-git `name` [in `major.minor`]?
+* Say HelloWorld
 
 _*ART releases:*_
 * Which build of `image_name` is in `release image name or pullspec`?
