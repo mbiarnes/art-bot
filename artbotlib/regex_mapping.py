@@ -128,9 +128,10 @@ def map_command_to_regex(so, plain_text, user_id):
             "example": "help"
         },
         {
-            "regex": r"^HelloWorld",
+            "regex": r"^say hello world",
             "flag": re.I,
-            "function": hello_world
+            "function": hello_world,
+            "example": "say hello world"
         },
 
         # ART releases:
